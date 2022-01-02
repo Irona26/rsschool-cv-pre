@@ -18,22 +18,22 @@ My goal is to gain knowledge in the field of front-end development. I really nee
 + HTML5
 + CSS3
 + JavaScript Basics
-+ Git,GitHub
++ Git, GitHub
 + VS Code
 + Adobe Photoshop
 
-## Code Example
+## Code Example:
 ```
 function multiply(a, b){
   return a * b
 };
 ```
 
-## Experience
+## Experience:
 
-## Education
+## Education:
 ### Yanka Kupala State University of Grodno
-Faculty of Law
+#### Faculty of Law
  - *Custom Regulations and Procedures*
 
 ## Language:
