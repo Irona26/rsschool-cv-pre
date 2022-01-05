@@ -1,73 +1,84 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    display: flex;
+    min-height: 100vh;
     padding: 0;
     margin-left: 20px;
-    min-height: 100vh;
-    margin: 0; 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     line-height: 30px;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  }
+    flex-direction: column;
+    justify-content: space-between;
+}
   
-  * {
+* {
     box-sizing: border-box;
-  }
-  .header {
+}
+
+.header {
       background-color: #fff2e1;
-  }
+}
 
-  .nav-link {
-      color: #d8205e;
-      font-size: 20px;
-      padding: 10px;
-      text-decoration: none;
+.nav-link {
+    padding: 10px;  
+    font-size: 20px;
+    color: #d8205e;
+    text-decoration: none;
     transition: .3s;
-  }
+}
 
-  .nav-item a:hover {
+.nav-item a:hover {
     color: #ffffff;
     background-color: #d8205e;
-  }
-  .header-container {
+}
+
+.header-container {
     max-width: 1440px;
     margin: 0 auto;
-    
-  }
-  .nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    padding: 0 20px;
-    line-height: 50px;
-  }
-
-  .section {
-  width: calc(50% - 20px);
-  padding-top: 10px;
-  padding-bottom: 0px!important;;
-  border-style: none!important;
-  justify-content: start;
 }
+
+.nav-list {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    line-height: 50px;
+}
+
+.section {
+  width: calc(50% - 20px);
+  padding: 0!important;
+  margin-left: 20px;
+  margin-bottom: 0!important;
+  border-style: none!important;
+  justify-content: center;
+}
+
 .section-profile-logo {
     display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 10px 100px;
+    width: 280px;
+    height: 280px;
+    margin: auto 100px;
+    flex-direction: row;
+    justify-content: space-between; 
     object-fit: cover;
-    
-  
 }
+
+
 .section-profile {
     display: flex;
     width: 50%;
     margin: auto 100px;
     margin-bottom: 20px;  
-    justify-content: baseline;
-  }
-  .section-profile-title {
+    flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-between; 
+    border-bottom: 20px solid #fff2e1;
+    
+}
+
+.section-profile-title {
     display: flex;
     width: calc(50% - 20px);
     flex-direction: column;
@@ -75,132 +86,174 @@ body {
     align-content: center;
     text-align: start;  
     text-transform: uppercase;
-  }
-  .section-title {  
+}
+
+.section-title {  
     font-size: 28px;
     font-weight: 400;
-    margin: 10px;
     padding-left: 30px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #829985;
     border-bottom: 1px solid #d8205e;
-    
-  }
-    .main-title {
-    margin: 60px auto 0px;  
+}
+
+.main-title {
+    margin: 100px auto 0 0; 
+    margin-bottom: 0; 
     padding-left: 0px;
     font-size: 40px;
     font-weight: 400;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: #829985;
     white-space: nowrap;
-  }
+}
 
-    .subtitle {
-        color: #5c5c5c;
-        line-height: 50px;
-        font-weight: 300;
-        letter-spacing: 2px;
-        white-space: nowrap;
-        padding: 0px;
-        margin: 0px;
-      }
+.subtitle {
+    padding: 0;
+    margin: 0 auto auto 0;
+    line-height: 50px;
+    font-weight: 300;
+    border-style: none!important;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    color: #5c5c5c; 
+}
 
-  html {
+html {
     scroll-behavior: smooth; 
-  }
-  .main {
+}
+
+.main {
     margin-bottom: auto;
-  }
-  .main-container {
-    margin-top: 20px;
-    border-top: 20px solid #fff2e1;
+}
+
+.main-container {
     display: flex;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 20px solid #fff2e1;
+    border-bottom: 20px solid #fff2e1;
+    justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
-  }
-  
-  .section-list {
+}
+
+.section-list {
     margin: 0;
-    padding: 0px 20px;  
-    
-  }
-  
-  .section-item {
+    padding: 0px 20px;   
+}
+
+.section-item {
     position: relative;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
     padding-left: 30px;
     list-style: none;
-  }
-  .section-item::before {
+}
+
+.section-item::before {
     content: "";
     position: absolute;
-    margin-top: 5px;
     left: 0px;
     top: 0px;
     width: 14px;
     height: 14px;
+    margin-top: 5px;
     background-size: contain;
     background-image: url(assets/ello.png);
-  }
-  .contacts-item:before {
+}
+
+.contacts-item:before {
     content: "";
     position: absolute;
-    margin-top: 5px;
     left: 0px;
     top: 0px;
     width: 20px;
     height: 20px; 
+    margin-top: 5px;
     background-size: contain;
     background-repeat: no-repeat;    
-  }
-  .contacts-item:nth-child(1):before {
+}
+
+.contacts-item:nth-child(1):before {
     background-image: url("assets/loc.png");
-  }
-  .contacts-item:nth-child(2):before {
+}
+
+.contacts-item:nth-child(2):before {
     background-image: url("assets/at.png");
-  }
-  .contacts-item:nth-child(3):before {
+}
+
+.contacts-item:nth-child(3):before {
     background-image: url("assets/github.png");
-  }
-  .contacts-item:nth-child(4):before {
+}
+
+.contacts-item:nth-child(4):before {
     background-image: url("assets/discord.png");
-  }
-  .contacts-item a {
+}
+
+.contacts-item a {
     color: #d8205e;
-  }
-  .section-projects a {
+}
+
+.section-projects a {
     color: #d8205e;
-  }
-  .section-projects a:hover {
+}
+
+.section-projects a:hover {
     color: #ffffff;
     background-color: #d8205e;
-  }
-  .contacts-item a:hover {
+}
+
+.contacts-item a:hover {
     color: #ffffff;
     background-color: #d8205e;
-  }
-  .section {
+}
+
+.footer-container a:hover {
+    color: #ffffff;
+    background-color: #d8205e;
+}
+
+.section {
     width: calc(50% - 20px);
     padding: 10px;
     padding-bottom: 35px;
+    margin-left: 0;
     border-bottom: 1px solid #672f2f;
-  }
-  .pre {
+}
+
+.pre {
     padding: 0;
     margin: 0;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.footer-container-logo {
+    width: 200px;
+    height: 100px;
+    justify-content: flex-end;
+}
+
+.github nav-link {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
     .section {
       width: 100%;
     }
-  }
+}
  
  
   
